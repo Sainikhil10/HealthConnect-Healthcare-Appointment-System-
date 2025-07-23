@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HealthConnect - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dashboard</h1>
+    <nav>
+      <a href="doctors.html">Doctors</a>
+      <a href="history.html">My History</a>
+      <button onclick="logout()">Logout</button>
+    </nav>
+  </header>
+
+  <section class="appointment-booking">
+    <h2>Book Appointment</h2>
+    <label for="doctor-select">Select Doctor:</label>
+    <select id="doctor-select"></select>
+
+    <label for="appointment-date">Date:</label>
+    <input type="date" id="appointment-date" />
+
+    <label for="appointment-time">Time:</label>
+    <input type="time" id="appointment-time" />
+
+    <button onclick="bookAppointment()">Book</button>
+  </section>
+
+  <section class="appointments-list">
+    <h2>My Upcoming Appointments</h2>
+    <div id="appointments-container"></div>
+  </section>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
