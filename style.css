@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7fafc;
+  margin: 0;
+  color: #333;
+}
+
+header {
+  background: #2c5282;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a, header button {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.auth-container {
+  width: 300px;
+  margin: 100px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.auth-container input, .auth-container button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+main, section {
+  max-width: 700px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#doctors-list, #appointments-container, #history-container, #admin-doctors-list, #admin-appointments-list {
+  margin-top: 10px;
+}
+
+.doctor-card, .appointment-card {
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #edf2f7;
+}
