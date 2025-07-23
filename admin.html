@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HealthConnect - Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <section>
+    <h2>Add Doctor</h2>
+    <input type="text" id="doctor-name" placeholder="Doctor Name" />
+    <input type="text" id="doctor-specialty" placeholder="Specialty" />
+    <button onclick="addDoctor()">Add Doctor</button>
+  </section>
+
+  <section>
+    <h2>All Doctors</h2>
+    <div id="admin-doctors-list"></div>
+  </section>
+
+  <section>
+    <h2>All Appointments</h2>
+    <div id="admin-appointments-list"></div>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
